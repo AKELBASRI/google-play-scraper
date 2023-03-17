@@ -1031,7 +1031,7 @@ class GPlayApps
      *
      * @return Model\App[]
      */
-    protected function fetchTopApps($category, string $topSlug, int $limit = 1000): array
+    public function fetchTopApps($category, string $topSlug, int $limit = 1000): array
     {
         try {
             $psrRequest = Scraper\PlayStoreUiRequest::getTopCategoryApps(
